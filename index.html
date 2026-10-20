@@ -6,12 +6,12 @@
 <title>BLACK BEARS | The Premium Outfitters</title>
 <meta name="description" content="Premium menswear and womenswear by Black Bears. Designed for elegance, crafted for perfection.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: {
-  colors: { char:'#0f0f0f', slate2:'#1a1a1a', slate3:'#2b2b2b', gold:'#c5a059', goldl:'#e0c28f', ivory:'#f3ede2' },
+  colors: { char:'#0f0f0f', slate2:'#1a1a1a', slate3:'#2b2b2b', gold:'#D4AF37', goldl:'#e0c28f', ivory:'#f3ede2' },
   fontFamily: { serif:['"Cormorant Garamond"','serif'], sans:['Manrope','sans-serif'] }
 }}}
 </script>
@@ -19,29 +19,29 @@ tailwind.config = { theme: { extend: {
   body{background:#0f0f0f;color:#f3ede2;font-family:Manrope,sans-serif}
   html{scroll-behavior:smooth;scroll-padding-top:72px}
   body{-webkit-font-smoothing:antialiased}
-  ::selection{background:#c5a059;color:#0f0f0f}
+  ::selection{background:#D4AF37;color:#0f0f0f}
   ::-webkit-scrollbar{width:9px}::-webkit-scrollbar-track{background:#0f0f0f}::-webkit-scrollbar-thumb{background:#3a3a3a;border-radius:9px}
-  .metal{color:#c5a059;background:linear-gradient(120deg,#8f7035 0%,#e6cf9a 38%,#c5a059 60%,#8f7035 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .metal{color:#D4AF37;background:linear-gradient(120deg,#b8860b 0%,#f5d061 38%,#D4AF37 60%,#b8860b 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease-in-out,transform .9s ease-in-out}
   .reveal.show{opacity:1;transform:none}
-  .btn-gold{background:#c5a059;color:#0f0f0f;transition:box-shadow .5s ease-in-out,background .5s ease-in-out}
-  .btn-gold:hover{background:#e0c28f;box-shadow:0 0 15px rgba(197,160,89,0.4)}
+  .btn-gold{background:#D4AF37;color:#0f0f0f;transition:box-shadow .5s ease-in-out,background .5s ease-in-out}
+  .btn-gold:hover{background:#f5d061;box-shadow:0 0 15px rgba(212,175,55,0.4)}
   .btn-line{border:1px solid rgba(243,237,226,.35);transition:box-shadow .5s ease-in-out,border-color .5s ease-in-out,color .5s ease-in-out}
-  .btn-line:hover{border-color:#c5a059;color:#e0c28f;box-shadow:0 0 15px rgba(197,160,89,0.3)}
+  .btn-line:hover{border-color:#D4AF37;color:#f5d061;box-shadow:0 0 15px rgba(212,175,55,0.3)}
   .imgbox{background:linear-gradient(135deg,#1a1a1a,#2b2b2b)}
   .bump{animation:bump .5s ease}
   @keyframes bump{50%{transform:scale(1.3)}}
   .pulse{animation:aura 3.8s ease-in-out infinite}
   @keyframes aura{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}50%{box-shadow:0 0 0 22px rgba(37,211,102,0)}}
   #drawer{transition:transform .5s ease-in-out}
-  :focus-visible{outline:2px solid #c5a059;outline-offset:2px}
+  :focus-visible{outline:2px solid #D4AF37;outline-offset:2px}
   input,textarea{background:#1a1a1a;border:1px solid #2b2b2b;color:#f3ede2;transition:border-color .5s ease-in-out}
-  input:focus,textarea:focus{border-color:#c5a059;outline:none}
+  input:focus,textarea:focus{border-color:#D4AF37;outline:none}
   .nl{position:relative}
-  .nl::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:100%;background:#c5a059;transform:scaleX(0);transform-origin:left;transition:transform .5s ease-in-out}
+  .nl::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:100%;background:#D4AF37;transform:scaleX(0);transform-origin:left;transition:transform .5s ease-in-out}
   .nl:hover::after{transform:scaleX(1)}
   .card{transition:border-color .5s ease-in-out,box-shadow .5s ease-in-out}
-  .card:hover{border-color:rgba(197,160,89,.45);box-shadow:0 0 15px rgba(197,160,89,0.3),0 18px 44px rgba(0,0,0,.55)}
+  .card:hover{border-color:rgba(212,175,55,.45);box-shadow:0 0 15px rgba(212,175,55,0.3),0 18px 44px rgba(0,0,0,.55)}
   .card img{transition:transform .8s ease-in-out}
   .card:hover img{transform:scale(1.05)}
   .card .ov{background:linear-gradient(to top,rgba(0,0,0,.65),rgba(0,0,0,.15));opacity:0;transition:opacity .5s ease-in-out}
@@ -52,6 +52,7 @@ tailwind.config = { theme: { extend: {
   .kb{animation:kb 26s ease-in-out infinite alternate}
   @keyframes kb{to{transform:scale(1.08)}}
   #overlay{transition:opacity .5s ease-in-out}
+  .hidden-reviews{display:none;}
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.kb{animation:none}}
 </style>
 </head>
@@ -63,116 +64,322 @@ tailwind.config = { theme: { extend: {
     <a href="#home" class="flex items-center gap-2 sm:gap-3 min-w-0" aria-label="BLACK BEARS home">
       <span class="bg-ivory rounded-md p-1 flex shrink-0"><img src="logo.png" alt="Black Bears Logo" class="h-10 w-auto object-contain"></span>
       <span class="leading-none">
-        <span class="block font-serif text-base sm:text-2xl font-bold tracking-[.12em] sm:tracking-[.2em] metal whitespace-nowrap">BLACK BEARS</span>
-        <span class="block text-[8px] sm:text-[10px] tracking-[.22em] sm:tracking-[.3em] text-ivory/80 mt-1 whitespace-nowrap font-semibold">THE PREMIUM OUTFITTERS</span>
+        <span class="block font-sans text-lg sm:text-2xl font-extrabold tracking-[.12em] sm:tracking-[.2em] text-[#D4AF37] whitespace-nowrap">BLACK BEARS</span>
+        <span class="block text-[9px] sm:text-[11px] tracking-[.22em] sm:tracking-[.3em] text-gray-200 mt-1 whitespace-nowrap font-bold">THE PREMIUM OUTFITTERS</span>
       </span>
     </a>
-    <nav class="hidden lg:flex items-center gap-8 text-sm">
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-200">
       <a href="#home" class="nl hover:text-gold transition">Home</a>
       <div class="relative group">
         <a href="#shop" class="nl hover:text-gold transition">Shop <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
         <div class="absolute left-0 top-full pt-3 hidden group-hover:block group-focus-within:block">
           <div class="bg-slate2 border border-slate3 rounded-md py-2 w-36 shadow-xl">
-            <a href="#shop" onclick="setTab('men')" class="block px-4 py-2 hover:text-gold">Men</a>
-            <a href="#shop" onclick="setTab('women')" class="block px-4 py-2 hover:text-gold">Women</a>
+            <a href="#shop" onclick="setTab('men')" class="block px-4 py-2 hover:text-gold transition">Men</a>
+            <a href="#shop" onclick="setTab('women')" class="block px-4 py-2 hover:text-gold transition">Women</a>
           </div>
         </div>
       </div>
       <a href="#categories" class="nl hover:text-gold transition">Categories</a>
       <a href="#about" class="nl hover:text-gold transition">About Us</a>
+      <a href="#reviews" class="nl hover:text-gold transition">Community</a>
       <a href="#contact" class="nl hover:text-gold transition">Contact</a>
     </nav>
     <div class="flex items-center gap-1 sm:gap-3 text-lg">
       <button onclick="toggleSearch()" aria-label="Search" class="w-8 sm:w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <button onclick="showWishlist()" aria-label="Wishlist" class="relative w-8 sm:w-10 h-10 hover:text-gold transition"><i class="fa-regular fa-heart"></i><span id="wishCount" class="hidden absolute top-1 right-0 bg-gold text-char text-[10px] font-semibold rounded-full w-4 h-4 items-center justify-center">0</span></button>
-      <button onclick="toggleCart(true)" aria-label="Open cart" class="relative w-8 sm:w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-bag-shopping"></i><span id="cartCount" class="absolute top-1 right-0 bg-gold text-char text-[10px] font-semibold rounded-full w-4 h-4 flex items-center justify-center">0</span></button>
-      <a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="hidden sm:inline-flex btn-gold rounded-full px-4 py-2 text-sm font-semibold items-center gap-2"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <button onclick="showWishlist()" aria-label="Wishlist" class="relative w-8 sm:w-10 h-10 hover:text-gold transition"><i class="fa-regular fa-heart"></i><span id="wishCount" class="hidden absolute top-1 right-0 bg-gold text-char text-[10px] font-bold rounded-full w-4 h-4 items-center justify-center">0</span></button>
+      <button onclick="toggleCart(true)" aria-label="Open cart" class="relative w-8 sm:w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-bag-shopping"></i><span id="cartCount" class="absolute top-1 right-0 bg-gold text-char text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">0</span></button>
+      <a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="hidden sm:inline-flex btn-gold rounded-full px-4 py-2 text-sm font-bold items-center gap-2"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
       <button onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Menu" class="lg:hidden w-8 sm:w-10 h-10"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
   <div id="searchBar" class="hidden border-t border-slate3 bg-slate2">
     <div class="max-w-7xl mx-auto px-5 py-3"><input id="searchInput" type="search" placeholder="Search shirts, pants, jackets" class="w-full rounded-md px-4 py-2.5 text-sm" oninput="onSearch()"></div>
   </div>
-  <div id="mnav" class="hidden lg:hidden border-t border-slate3 bg-slate2 px-5 py-3 flex flex-col text-sm">
-    <a class="py-2" href="#home">Home</a><a class="py-2" href="#shop" onclick="setTab('men')">Shop Men</a><a class="py-2" href="#shop" onclick="setTab('women')">Shop Women</a><a class="py-2" href="#categories">Categories</a><a class="py-2" href="#about">About Us</a><a class="py-2" href="#contact">Contact</a>
+  <div id="mnav" class="hidden lg:hidden border-t border-slate3 bg-slate2 px-5 py-3 flex flex-col text-sm font-semibold text-gray-200">
+    <a class="py-2" href="#home">Home</a><a class="py-2" href="#shop" onclick="setTab('men')">Shop Men</a><a class="py-2" href="#shop" onclick="setTab('women')">Shop Women</a><a class="py-2" href="#categories">Categories</a><a class="py-2" href="#about">About Us</a><a class="py-2" href="#reviews">Community</a><a class="py-2" href="#contact">Contact</a>
   </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="relative min-h-[88vh] flex items-center overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=80" alt="Luxury apparel collection" class="kb absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+  <img src="Background-image.png" alt="Luxury apparel collection" class="kb absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
   <div class="absolute inset-0 bg-gradient-to-r from-char via-char/60 to-transparent"></div>
   <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-char to-transparent"></div>
   <div class="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/60 to-transparent"></div>
   <div class="relative max-w-7xl mx-auto px-5 py-24 w-full">
-    <h1 class="font-serif font-semibold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] max-w-3xl">Elevate Your Style with Premium Quality Outfitters</h1>
-    <p class="mt-6 text-lg text-ivory/75 max-w-xl">Designed for elegance, crafted for perfection.</p>
+    <h1 class="font-serif font-semibold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] max-w-3xl text-white">Elevate Your Style with Premium Quality Outfitters</h1>
+    <p class="mt-6 text-lg text-gray-300 max-w-xl">Designed for elegance, crafted for perfection.</p>
     <div class="mt-10 flex flex-wrap gap-3">
-      <a href="#shop" onclick="setTab('men')" class="btn-gold rounded-full px-8 py-3.5 font-semibold text-sm uppercase tracking-[.18em]">Shop Men</a>
-      <a href="#shop" onclick="setTab('women')" class="btn-line rounded-full px-8 py-3.5 font-semibold text-sm uppercase tracking-[.18em]">Shop Women</a>
+      <a href="#shop" onclick="setTab('men')" class="btn-gold rounded-full px-8 py-3.5 font-bold text-sm uppercase tracking-[.18em]">Shop Men</a>
+      <a href="#shop" onclick="setTab('women')" class="btn-line rounded-full px-8 py-3.5 font-bold text-sm uppercase tracking-[.18em]">Shop Women</a>
     </div>
   </div>
 </section>
 
 <!-- CATEGORIES -->
-<section id="categories" class="max-w-7xl mx-auto px-5 py-20">
-  <h2 class="font-serif text-4xl reveal">Collections</h2>
-  <p class="text-ivory/60 mt-2 reveal">Pick a category to filter the shop.</p>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10" id="catGrid"></div>
+<section id="categories" class="max-w-7xl mx-auto px-5 py-16">
+  <h2 class="font-serif text-3xl reveal text-white">Collections</h2>
+  <p class="text-gray-300 mt-2 text-sm reveal">Pick a category to filter the shop.</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8" id="catGrid"></div>
 </section>
 
 <!-- SHOP -->
 <section id="shop" class="bg-slate2/50 border-y border-slate3">
-  <div class="max-w-7xl mx-auto px-5 py-20">
+  <div class="max-w-7xl mx-auto px-5 py-16">
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
-      <div><h2 class="font-serif text-4xl reveal">Shop</h2><p id="shopNote" class="text-ivory/60 mt-2 text-sm"></p></div>
+      <div><h2 class="font-serif text-3xl reveal text-white">Shop</h2><p id="shopNote" class="text-gray-300 mt-2 text-sm"></p></div>
       <div class="inline-flex max-w-full overflow-x-auto rounded-full border border-slate3 p-1 bg-char self-start" role="tablist">
-        <button id="tab-all" onclick="setTab('all')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition">All Items</button>
-        <button id="tab-men" onclick="setTab('men')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition">Men's</button>
-        <button id="tab-women" onclick="setTab('women')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition">Women's</button>
+        <button id="tab-all" onclick="setTab('all')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition">All Items</button>
+        <button id="tab-men" onclick="setTab('men')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition">Men's</button>
+        <button id="tab-women" onclick="setTab('women')" role="tab" class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition">Women's</button>
       </div>
     </div>
     <div class="mt-6 flex flex-wrap gap-2">
-      <button id="cat-all" onclick="pickCat('All')" class="px-4 py-1.5 rounded-full text-xs font-semibold border border-slate3 hover:border-gold transition">All Categories</button>
-      <button id="cat-Shirts" onclick="pickCat('Shirts')" class="px-4 py-1.5 rounded-full text-xs font-semibold border border-slate3 hover:border-gold transition">Shirts</button>
-      <button id="cat-Pants" onclick="pickCat('Pants')" class="px-4 py-1.5 rounded-full text-xs font-semibold border border-slate3 hover:border-gold transition">Pants</button>
-      <button id="cat-Jackets" onclick="pickCat('Jackets')" class="px-4 py-1.5 rounded-full text-xs font-semibold border border-slate3 hover:border-gold transition">Jackets</button>
+      <button id="cat-all" onclick="pickCat('All')" class="px-4 py-1.5 rounded-full text-xs font-bold border border-slate3 hover:border-gold transition text-gray-200">All Categories</button>
+      <button id="cat-Shirts" onclick="pickCat('Shirts')" class="px-4 py-1.5 rounded-full text-xs font-bold border border-slate3 hover:border-gold transition text-gray-200">Shirts</button>
+      <button id="cat-Pants" onclick="pickCat('Pants')" class="px-4 py-1.5 rounded-full text-xs font-bold border border-slate3 hover:border-gold transition text-gray-200">Pants</button>
+      <button id="cat-Jackets" onclick="pickCat('Jackets')" class="px-4 py-1.5 rounded-full text-xs font-bold border border-slate3 hover:border-gold transition text-gray-200">Jackets</button>
     </div>
     <div id="grid" class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 mt-10"></div>
-    <p id="empty" class="hidden text-center text-ivory/60 py-16">No products match. Clear the search or pick another category.</p>
+    <p id="empty" class="hidden text-center text-gray-400 py-16">No products match. Clear the search or pick another category.</p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="max-w-7xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-14 items-center">
-  <div class="reveal imgbox rounded-lg overflow-hidden aspect-[4/5] max-h-[560px] w-full">
-    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1000&q=80" alt="Inside a tailoring studio" class="w-full h-full object-cover" onerror="this.remove()">
+<section id="about" class="max-w-7xl mx-auto px-5 py-16 grid lg:grid-cols-2 gap-14 items-center">
+  <div class="reveal imgbox rounded-lg overflow-hidden aspect-[4/5] max-h-[460px] w-full">
+    <img src="main-image.png" alt="Inside a tailoring studio" class="w-full h-full object-cover" onerror="this.remove()">
   </div>
   <div class="reveal">
-    <h2 class="font-serif text-4xl sm:text-5xl leading-tight">Built on fabric, fit and finish</h2>
-    <p class="mt-6 text-ivory/70 leading-relaxed max-w-prose">BLACK BEARS began with a simple standard: clothing should look sharp, feel right and last. Every piece is chosen for its cloth, cut and stitching, so you can wear it with confidence from the first day.</p>
-    <p class="mt-4 text-ivory/70 leading-relaxed max-w-prose">Our look draws on modern street culture: clean lines, confident silhouettes and pieces that move easily from the city to the dinner table. Collections stay tight and are made properly for men and women who prefer quality over noise.</p>
-    <div class="grid grid-cols-3 gap-4 mt-10 text-sm text-ivory/80">
-      <div><i class="fa-solid fa-scissors text-gold text-xl"></i><p class="mt-2">Precision tailoring</p></div>
-      <div><i class="fa-solid fa-gem text-gold text-xl"></i><p class="mt-2">Premium fabrics</p></div>
-      <div><i class="fa-solid fa-truck-fast text-gold text-xl"></i><p class="mt-2">Order on WhatsApp</p></div>
+    <h2 class="font-serif text-3xl sm:text-4xl leading-tight text-white">Built on fabric, fit and finish</h2>
+    <p class="mt-4 text-sm text-gray-200 leading-relaxed max-w-prose">BLACK BEARS began with a simple standard: clothing should look sharp, feel right and last. Every piece is chosen for its cloth, cut and stitching, so you can wear it with confidence from the first day.</p>
+    <p class="mt-3 text-sm text-gray-200 leading-relaxed max-w-prose">Our look draws on modern street culture: clean lines, confident silhouettes and pieces that move easily from the city to the dinner table. Collections stay tight and are made properly for men and women who prefer quality over noise.</p>
+    <div class="grid grid-cols-3 gap-4 mt-8 text-xs font-semibold text-gray-200">
+      <div><i class="fa-solid fa-scissors text-gold text-lg"></i><p class="mt-1">Precision tailoring</p></div>
+      <div><i class="fa-solid fa-gem text-gold text-lg"></i><p class="mt-1">Premium fabrics</p></div>
+      <div><i class="fa-solid fa-truck-fast text-gold text-lg"></i><p class="mt-1">Order on WhatsApp</p></div>
     </div>
   </div>
 </section>
 
-<!-- FOUNDER SPOTLIGHT -->
-<section id="founder" class="relative overflow-hidden bg-slate2 border-y border-slate3">
-  <span aria-hidden="true" class="absolute -right-4 -bottom-20 font-serif font-bold text-[14rem] sm:text-[20rem] leading-none text-white/[0.035] select-none">AJ</span>
-  <div class="relative max-w-7xl mx-auto px-5 py-24 sm:py-32 grid lg:grid-cols-12 gap-12 items-end">
-    <div class="lg:col-span-7 reveal">
-      <h2 class="font-serif font-semibold text-6xl sm:text-7xl lg:text-8xl leading-[.95] tracking-wide metal">ANAS<br>JAVED</h2>
-      <div class="mt-8 flex items-center gap-4"><span class="h-px w-16 bg-gold"></span><p class="text-lg text-white/85">Founder / Lead Outfitter</p></div>
+<!-- INVESTORS & LEADERSHIP (COMPACT & HIGH CONTRAST) -->
+<section id="investors" class="bg-slate2/50 border-t border-slate3 py-12">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center reveal mb-8">
+      <h2 class="font-serif text-2xl font-bold text-gold">Investors & Leadership</h2>
+      <p class="text-gray-300 mt-2 text-xs max-w-xl mx-auto">The visionaries and partners who stand behind BLACK BEARS.</p>
     </div>
-    <div class="lg:col-span-5 reveal">
-      <p class="text-ivory/70 leading-relaxed">Anas leads every BLACK BEARS collection from first sketch to final stitch. He chooses the fabrics, signs off every fit and stands behind each piece. Message him directly for sizing, custom orders or styling advice.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="btn-gold rounded-full px-7 py-3 text-sm font-semibold inline-flex items-center gap-2"><i class="fa-brands fa-whatsapp"></i> Message Anas</a>
-        <a href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="btn-line rounded-full px-7 py-3 text-sm font-semibold inline-flex items-center gap-2"><i class="fa-brands fa-instagram"></i> @anasjabedrkw</a>
+    
+    <div class="grid md:grid-cols-3 gap-4">
+      
+      <!-- INVESTOR CARD START -->
+      <div class="reveal bg-char border border-slate3 rounded-lg p-4 hover:border-gold transition duration-500 group flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-transparent group-hover:border-gold transition duration-500 imgbox shrink-0">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Investor" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h3 class="font-serif text-base font-bold text-white leading-tight">Zain Ahmed</h3>
+          <p class="text-gold text-[9px] font-bold tracking-wider uppercase mt-0.5 mb-1">Lead Investor</p>
+          <p class="text-gray-200 text-[11px] leading-tight">Serial entrepreneur scaling premium lifestyle brands.</p>
+        </div>
+      </div>
+      <!-- INVESTOR CARD END -->
+
+      <!-- INVESTOR CARD START -->
+      <div class="reveal bg-char border border-slate3 rounded-lg p-4 hover:border-gold transition duration-500 group flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-transparent group-hover:border-gold transition duration-500 imgbox shrink-0">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Investor" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h3 class="font-serif text-base font-bold text-white leading-tight">Sara Khan</h3>
+          <p class="text-gold text-[9px] font-bold tracking-wider uppercase mt-0.5 mb-1">Strategic Partner</p>
+          <p class="text-gray-200 text-[11px] leading-tight">Expert in textile sourcing and sustainable fashion.</p>
+        </div>
+      </div>
+      <!-- INVESTOR CARD END -->
+
+      <!-- INVESTOR CARD START -->
+      <div class="reveal bg-char border border-slate3 rounded-lg p-4 hover:border-gold transition duration-500 group flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-transparent group-hover:border-gold transition duration-500 imgbox shrink-0">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" alt="Investor" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h3 class="font-serif text-base font-bold text-white leading-tight">Bilal Raza</h3>
+          <p class="text-gold text-[9px] font-bold tracking-wider uppercase mt-0.5 mb-1">Board Member</p>
+          <p class="text-gray-200 text-[11px] leading-tight">Brings deep retail logistics and operational expertise.</p>
+        </div>
+      </div>
+      <!-- INVESTOR CARD END -->
+
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY REVIEWS (COMPACT & HIGH CONTRAST) -->
+<section id="reviews" class="max-w-7xl mx-auto px-5 py-12">
+  <div class="text-center reveal mb-8">
+    <p class="text-gold text-[10px] font-bold tracking-[.25em] uppercase mb-1">Customer Reviews</p>
+    <h2 class="font-serif text-2xl font-bold text-white">Black Bears Community</h2>
+    <p class="text-gray-300 mt-2 max-w-xl mx-auto text-xs">Real feedback from the people who wear BLACK BEARS.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-4">
+    
+    <!-- COMMUNITY CARD 1 -->
+    <div class="reveal bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+      <div>
+        <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+        <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"The fabric quality is exactly what I expected from a premium brand. The fit was perfect and delivery was quick."</p>
+      </div>
+      <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+        <div>
+          <div class="flex items-center gap-1.5">
+            <h4 class="font-bold text-white text-xs">Customer Name</h4>
+            <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+            <i class="fa-brands fa-instagram"></i> @CustomerHandle
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- COMMUNITY CARD 1 END -->
+
+    <!-- COMMUNITY CARD 2 -->
+    <div class="reveal bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+      <div>
+        <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+        <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"Bought the leather jacket and I get compliments every time I wear it. The stitching feels far above the price."</p>
+      </div>
+      <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+        <div>
+          <div class="flex items-center gap-1.5">
+            <h4 class="font-bold text-white text-xs">Customer Name</h4>
+            <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+            <i class="fa-brands fa-instagram"></i> @CustomerHandle
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- COMMUNITY CARD 2 END -->
+
+    <!-- COMMUNITY CARD 3 -->
+    <div class="reveal bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+      <div>
+        <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+        <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"My formal shirts and trousers are now my go-to for the office. Sharp, comfortable and they hold shape."</p>
+      </div>
+      <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+        <div>
+          <div class="flex items-center gap-1.5">
+            <h4 class="font-bold text-white text-xs">Customer Name</h4>
+            <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+            <i class="fa-brands fa-instagram"></i> @CustomerHandle
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- COMMUNITY CARD 3 END -->
+
+    <!-- HIDDEN COMMUNITY CARDS START -->
+    <div id="hidden-reviews" class="hidden-reviews grid md:grid-cols-3 gap-4 col-span-full mt-4">
+      
+      <!-- COMMUNITY CARD 4 -->
+      <div class="bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+        <div>
+          <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+          <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"Absolutely love the high-waist tailored trousers! The fabric breathes well and the stitching is flawless."</p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="font-bold text-white text-xs">Ayesha M.</h4>
+              <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+            </div>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+              <i class="fa-brands fa-instagram"></i> @ayesha.style
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- COMMUNITY CARD 4 END -->
+
+      <!-- COMMUNITY CARD 5 -->
+      <div class="bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+        <div>
+          <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+          <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"The tailored overcoat is a masterpiece. I've never felt more confident in a winter jacket. Worth every rupee."</p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="font-bold text-white text-xs">Hamza T.</h4>
+              <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+            </div>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+              <i class="fa-brands fa-instagram"></i> @hamza.fits
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- COMMUNITY CARD 5 END -->
+
+      <!-- COMMUNITY CARD 6 -->
+      <div class="bg-slate2 border border-slate3 rounded-lg p-4 hover:border-gold/50 transition duration-500 flex flex-col justify-between h-full">
+        <div>
+          <i class="fa-solid fa-quote-left text-gold/40 text-lg mb-2"></i>
+          <p class="text-gray-200 text-xs font-medium leading-relaxed mb-3">"Fast delivery, beautiful packaging, and the silk blouse is stunning. Will definitely be ordering again."</p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate3 pt-3 mt-auto">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=100&q=80" alt="Customer" class="w-10 h-10 rounded-full object-cover border border-slate3" onerror="this.style.display='none'">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h4 class="font-bold text-white text-xs">Mina S.</h4>
+              <span class="bg-gold/20 text-gold border border-gold/50 text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider">Verified</span>
+            </div>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="text-[10px] font-semibold text-gray-300 hover:text-gold transition flex items-center gap-1 mt-0.5">
+              <i class="fa-brands fa-instagram"></i> @mina_luxe
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- COMMUNITY CARD 6 END -->
+
+    </div>
+    <!-- HIDDEN COMMUNITY CARDS END -->
+
+  </div>
+
+  <!-- VIEW MORE BUTTON -->
+  <div class="text-center mt-8 reveal">
+    <button id="loadMoreBtn" onclick="toggleReviews()" class="btn-line rounded-full px-6 py-2 text-xs font-bold text-gray-200 inline-flex items-center gap-2 uppercase tracking-[.1em]">
+      View More Reviews <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300" id="loadMoreIcon"></i>
+    </button>
+  </div>
+</section>
+
+<!-- FOUNDER SPOTLIGHT (COMPACT) -->
+<section id="founder" class="relative overflow-hidden bg-slate2 border-y border-slate3 py-12">
+  <span aria-hidden="true" class="absolute -right-4 -bottom-10 font-serif font-bold text-[10rem] sm:text-[14rem] leading-none text-white/[0.03] select-none">AJ</span>
+  <div class="relative max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-8 items-center">
+    <div class="reveal">
+      <h2 class="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl leading-[.95] tracking-wide metal">ANAS JAVED</h2>
+      <div class="mt-3 flex items-center gap-3"><span class="h-px w-12 bg-gold"></span><p class="text-sm font-bold text-white">Founder / Lead Outfitter</p></div>
+    </div>
+    <div class="reveal">
+      <p class="text-gray-200 text-sm leading-relaxed max-w-md">Anas leads every BLACK BEARS collection from first sketch to final stitch. He chooses the fabrics, signs off every fit and stands behind each piece. Message him directly for sizing, custom orders or styling advice.</p>
+      <div class="mt-5 flex flex-wrap gap-2">
+        <a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="btn-gold rounded-full px-5 py-2 text-xs font-bold inline-flex items-center gap-2"><i class="fa-brands fa-whatsapp"></i> Message Anas</a>
+        <a href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="btn-line rounded-full px-5 py-2 text-xs font-bold text-gray-200 inline-flex items-center gap-2"><i class="fa-brands fa-instagram"></i> @anasjabedrkw</a>
       </div>
     </div>
   </div>
@@ -180,55 +387,55 @@ tailwind.config = { theme: { extend: {
 
 <!-- CONTACT -->
 <section id="contact" class="bg-slate2/50 border-y border-slate3">
-  <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-14">
+  <div class="max-w-7xl mx-auto px-5 py-16 grid lg:grid-cols-2 gap-14">
     <div class="reveal">
-      <h2 class="font-serif text-4xl">Get in touch</h2>
-      <p class="text-ivory/60 mt-2">Questions about sizing, orders or custom requests? Message us directly.</p>
-      <ul class="mt-8 space-y-4">
-        <li><a href="tel:03359078621" class="flex items-center gap-4 hover:text-gold transition"><span class="w-11 h-11 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-solid fa-phone"></i></span>0335-9078621</a></li>
-        <li><a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-gold transition"><span class="w-11 h-11 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-whatsapp"></i></span>WhatsApp 0335-9078621</a></li>
-        <li><a href="mailto:blackbears926@gmail.com" class="flex items-center gap-4 hover:text-gold transition"><span class="w-11 h-11 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-solid fa-envelope"></i></span>blackbears926@gmail.com</a></li>
-        <li><a href="https://instagram.com/BlackBears.official" target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-gold transition"><span class="w-11 h-11 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-instagram"></i></span>@BlackBears.official</a></li>
-        <li><a href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="flex items-center gap-4 hover:text-gold transition"><span class="w-11 h-11 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-instagram"></i></span>@anasjabedrkw</a></li>
+      <h2 class="font-serif text-3xl font-bold text-white">Get in touch</h2>
+      <p class="text-gray-300 mt-2 text-sm">Questions about sizing, orders or custom requests? Message us directly.</p>
+      <ul class="mt-6 space-y-3 text-sm font-semibold text-gray-200">
+        <li><a href="tel:03359078621" class="flex items-center gap-3 hover:text-gold transition"><span class="w-9 h-9 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-solid fa-phone text-sm"></i></span>0335-9078621</a></li>
+        <li><a href="https://wa.me/923359078621" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-gold transition"><span class="w-9 h-9 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-whatsapp text-sm"></i></span>WhatsApp 0335-9078621</a></li>
+        <li><a href="mailto:blackbears926@gmail.com" class="flex items-center gap-3 hover:text-gold transition"><span class="w-9 h-9 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-solid fa-envelope text-sm"></i></span>blackbears926@gmail.com</a></li>
+        <li><a href="https://instagram.com/BlackBears.official" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-gold transition"><span class="w-9 h-9 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-instagram text-sm"></i></span>@BlackBears.official</a></li>
+        <li><a href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-gold transition"><span class="w-9 h-9 rounded-full bg-slate3 flex items-center justify-center text-gold"><i class="fa-brands fa-instagram text-sm"></i></span>@anasjabedrkw</a></li>
       </ul>
     </div>
-    <form id="contactForm" class="reveal space-y-4" onsubmit="sendContact(event)">
-      <div><label for="cName" class="text-sm text-ivory/70">Name</label><input id="cName" required class="w-full rounded-md px-4 py-3 mt-1 text-sm"></div>
-      <div><label for="cEmail" class="text-sm text-ivory/70">Email</label><input id="cEmail" type="email" required class="w-full rounded-md px-4 py-3 mt-1 text-sm"></div>
-      <div><label for="cMsg" class="text-sm text-ivory/70">Message</label><textarea id="cMsg" rows="5" required class="w-full rounded-md px-4 py-3 mt-1 text-sm"></textarea></div>
-      <button class="btn-gold rounded-full px-8 py-3 font-semibold text-sm">Send via WhatsApp</button>
-      <p class="text-xs text-ivory/50">This opens WhatsApp with your message ready to send.</p>
+    <form id="contactForm" class="reveal space-y-3" onsubmit="sendContact(event)">
+      <div><label for="cName" class="text-xs font-bold text-gray-300">Name</label><input id="cName" required class="w-full rounded-md px-3 py-2 mt-1 text-sm"></div>
+      <div><label for="cEmail" class="text-xs font-bold text-gray-300">Email</label><input id="cEmail" type="email" required class="w-full rounded-md px-3 py-2 mt-1 text-sm"></div>
+      <div><label for="cMsg" class="text-xs font-bold text-gray-300">Message</label><textarea id="cMsg" rows="4" required class="w-full rounded-md px-3 py-2 mt-1 text-sm"></textarea></div>
+      <button class="btn-gold rounded-full px-6 py-2.5 font-bold text-xs">Send via WhatsApp</button>
+      <p class="text-[10px] text-gray-400 mt-1">This opens WhatsApp with your message ready to send.</p>
     </form>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="bg-[#0a0a0a]">
-  <div class="max-w-7xl mx-auto px-5 py-14 grid sm:grid-cols-3 gap-10 text-sm">
+  <div class="max-w-7xl mx-auto px-5 py-10 grid sm:grid-cols-3 gap-8 text-sm">
     <div>
       <div class="flex items-center gap-3">
-        <span class="bg-ivory rounded-md p-1 flex"><img src="logo.png" alt="Black Bears Logo" class="h-10 w-auto object-contain"></span>
-        <div><p class="font-serif text-2xl font-bold tracking-[.18em] metal">BLACK BEARS</p><p class="text-[9px] tracking-[.25em] text-ivory/70 mt-0.5">THE PREMIUM OUTFITTERS</p></div>
+        <span class="bg-ivory rounded-md p-1 flex"><img src="logo.png" alt="Black Bears Logo" class="h-8 w-auto object-contain"></span>
+        <div><p class="font-sans text-xl font-extrabold tracking-[.15em] text-[#D4AF37]">BLACK BEARS</p><p class="text-[8px] font-bold tracking-[.25em] text-gray-200 mt-0.5">THE PREMIUM OUTFITTERS</p></div>
       </div>
-      <p class="text-ivory/60 mt-3 max-w-xs">Designed for elegance, crafted for perfection.</p>
+      <p class="text-gray-400 mt-2 max-w-xs text-xs">Designed for elegance, crafted for perfection.</p>
     </div>
-    <div><p class="font-semibold mb-3">Quick links</p><ul class="space-y-2 text-ivory/60"><li><a class="hover:text-gold" href="#home">Home</a></li><li><a class="hover:text-gold" href="#shop">Shop</a></li><li><a class="hover:text-gold" href="#categories">Categories</a></li><li><a class="hover:text-gold" href="#about">About Us</a></li><li><a class="hover:text-gold" href="#contact">Contact</a></li></ul></div>
-    <div><p class="font-semibold mb-3">Follow</p><div class="flex gap-4 text-xl"><a aria-label="Instagram BlackBears.official" href="https://instagram.com/BlackBears.official" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a><a aria-label="Instagram anasjabedrkw" href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a><a aria-label="WhatsApp" href="https://wa.me/923359078621" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-whatsapp"></i></a><a aria-label="Email" href="mailto:blackbears926@gmail.com" class="hover:text-gold transition"><i class="fa-regular fa-envelope"></i></a></div></div>
+    <div><p class="font-bold mb-2 text-xs text-white">Quick links</p><ul class="space-y-1.5 text-xs font-semibold text-gray-300"><li><a class="hover:text-gold" href="#home">Home</a></li><li><a class="hover:text-gold" href="#shop">Shop</a></li><li><a class="hover:text-gold" href="#categories">Categories</a></li><li><a class="hover:text-gold" href="#about">About Us</a></li><li><a class="hover:text-gold" href="#reviews">Community</a></li><li><a class="hover:text-gold" href="#contact">Contact</a></li></ul></div>
+    <div><p class="font-bold mb-2 text-xs text-white">Follow</p><div class="flex gap-3 text-lg"><a aria-label="Instagram BlackBears.official" href="https://instagram.com/BlackBears.official" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a><a aria-label="Instagram anasjabedrkw" href="https://instagram.com/anasjabedrkw" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-instagram"></i></a><a aria-label="WhatsApp" href="https://wa.me/923359078621" target="_blank" rel="noopener" class="hover:text-gold transition"><i class="fa-brands fa-whatsapp"></i></a><a aria-label="Email" href="mailto:blackbears926@gmail.com" class="hover:text-gold transition"><i class="fa-regular fa-envelope"></i></a></div></div>
   </div>
-  <div class="border-t border-slate3 text-center text-xs text-ivory/40 py-5">&copy; <span id="yr"></span> BLACK BEARS. All rights reserved.</div>
+  <div class="border-t border-slate3 text-center text-[10px] text-gray-400 py-4">&copy; <span id="yr"></span> BLACK BEARS. All rights reserved.</div>
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/923359078621" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="pulse fixed bottom-5 right-5 z-30 w-14 h-14 rounded-full bg-[#25d366] text-white text-3xl flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://wa.me/923359078621" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="pulse fixed bottom-5 right-5 z-30 w-12 h-12 rounded-full bg-[#25d366] text-white text-2xl flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></a>
 
 <!-- CART DRAWER -->
 <div id="overlay" onclick="closeAll()" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none"></div>
 <aside id="drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-slate2 border-l border-slate3 translate-x-full flex flex-col" aria-label="Shopping cart">
-  <div class="flex items-center justify-between px-6 h-16 border-b border-slate3"><h3 class="font-serif text-2xl">Your cart</h3><button onclick="toggleCart(false)" aria-label="Close cart" class="w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-xmark text-xl"></i></button></div>
+  <div class="flex items-center justify-between px-6 h-16 border-b border-slate3"><h3 class="font-serif text-2xl font-bold text-white">Your cart</h3><button onclick="toggleCart(false)" aria-label="Close cart" class="w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-xmark text-xl"></i></button></div>
   <div id="cartItems" class="flex-1 overflow-y-auto px-6 py-4 space-y-4"></div>
   <div class="border-t border-slate3 p-6">
-    <div class="flex justify-between text-lg mb-4"><span>Total</span><span id="cartTotal" class="font-semibold text-gold">Rs 0</span></div>
-    <button onclick="checkout()" class="btn-gold w-full rounded-full py-3.5 font-semibold text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Checkout via WhatsApp</button>
+    <div class="flex justify-between text-lg font-bold text-white mb-4"><span>Total</span><span id="cartTotal" class="font-bold text-gold">Rs 0</span></div>
+    <button onclick="checkout()" class="btn-gold w-full rounded-full py-3.5 font-bold text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Checkout via WhatsApp</button>
   </div>
 </aside>
 
@@ -268,22 +475,22 @@ const catIcons = {Shirts:'fa-shirt',Pants:'fa-ruler-vertical',Jackets:'fa-vest'}
 let tab='all', cat='All', query='', cart=[], wish=new Set();
 const $ = id => document.getElementById(id);
 const fmt = n => 'Rs ' + n.toLocaleString('en-PK');
-const stars = r => '<span class="text-gold text-xs">' + '<i class="fa-solid fa-star"></i>'.repeat(Math.round(r)) + '</span> <span class="text-xs text-ivory/50">' + r.toFixed(1) + '</span>';
+const stars = r => '<span class="text-gold text-xs">' + '<i class="fa-solid fa-star"></i>'.repeat(Math.round(r)) + '</span> <span class="text-xs text-gray-300">' + r.toFixed(1) + '</span>';
 
 function renderCats(){
   const cats = ['Shirts','Pants','Jackets'];
-  $('catGrid').innerHTML = cats.map(c => `<button onclick="pickCat('${c}')" class="reveal group text-left bg-slate2 border border-slate3 hover:border-gold rounded-lg p-6 transition hover:shadow-[0_0_15px_rgba(197,160,89,0.3)]"><i class="fa-solid ${catIcons[c]} text-gold text-2xl"></i><p class="font-serif text-2xl mt-4">${c}</p><p class="text-xs text-ivory/50 mt-1">${products.filter(p=>p.cat===c).length} pieces</p></button>`).join('')
-   + `<button onclick="pickCat('All')" class="reveal text-left bg-slate2 border border-slate3 hover:border-gold rounded-lg p-6 transition hover:shadow-[0_0_15px_rgba(197,160,89,0.3)]"><i class="fa-solid fa-border-all text-gold text-2xl"></i><p class="font-serif text-2xl mt-4">View all</p><p class="text-xs text-ivory/50 mt-1">Clear filters</p></button>`;
+  $('catGrid').innerHTML = cats.map(c => `<button onclick="pickCat('${c}')" class="reveal group text-left bg-slate2 border border-slate3 hover:border-gold rounded-lg p-4 transition hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"><i class="fa-solid ${catIcons[c]} text-gold text-xl"></i><p class="font-serif text-lg font-bold text-white mt-2">${c}</p><p class="text-[10px] font-semibold text-gray-300 mt-1">${products.filter(p=>p.cat===c).length} pieces</p></button>`).join('')
+   + `<button onclick="pickCat('All')" class="reveal text-left bg-slate2 border border-slate3 hover:border-gold rounded-lg p-4 transition hover:shadow-[0_0_15px_rgba(212,175,55,0.3)]"><i class="fa-solid fa-border-all text-gold text-xl"></i><p class="font-serif text-lg font-bold text-white mt-2">View all</p><p class="text-[10px] font-semibold text-gray-300 mt-1">Clear filters</p></button>`;
   observe();
 }
 function pickCat(c){
   cat=c;
-  ['all','Shirts','Pants','Jackets'].forEach(x=>{ const b=$('cat-'+x); if(!b) return; const on=x===c; b.className='px-4 py-1.5 rounded-full text-xs font-semibold border transition '+(on?'bg-gold text-char border-gold':'border-slate3 hover:border-gold text-ivory/80'); });
+  ['all','Shirts','Pants','Jackets'].forEach(x=>{ const b=$('cat-'+x); if(!b) return; const on=x===c; b.className='px-4 py-1.5 rounded-full text-xs font-bold border transition '+(on?'bg-gold text-char border-gold':'border-slate3 hover:border-gold text-gray-200'); });
   renderGrid(); $('shop').scrollIntoView({behavior:'smooth'});
 }
 function setTab(t){ tab=t; renderGrid(); }
 function renderGrid(){
-  ['all','men','women'].forEach(t => { const b=$('tab-'+t); const on=t===tab; b.className = 'px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition ' + (on ? 'bg-gold text-char' : 'text-ivory/70 hover:text-gold'); b.setAttribute('aria-selected', on); });
+  ['all','men','women'].forEach(t => { const b=$('tab-'+t); const on=t===tab; b.className = 'px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition ' + (on ? 'bg-gold text-char' : 'text-gray-300 hover:text-gold'); b.setAttribute('aria-selected', on); });
   const q = query.trim().toLowerCase();
   const list = products.filter(p => ((q || tab==='all') ? true : p.g===tab) && (cat==='All' || p.cat===cat) && (!q || (p.name+' '+p.cat+' '+p.g).toLowerCase().includes(q)));
   $('shopNote').textContent = (q ? `Results for "${query}"` : (tab==='all' ? 'All Collections' : tab==='men' ? "Men's Collection" : "Women's Collection")) + (cat!=='All' ? ' · ' + cat : '') + ` · ${list.length} item${list.length===1?'':'s'}`;
@@ -293,16 +500,16 @@ function renderGrid(){
      <div class="relative imgbox aspect-[3/4] overflow-hidden">
        <img src="${U(p.img)}" alt="${p.name}" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'">
        <div class="ov absolute inset-0 pointer-events-none"></div>
-       ${p.badge ? `<span class="absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full ${p.badge==='New Arrival'?'bg-ivory text-char':'bg-gold text-char'}">${p.badge}</span>` : ''}
+       ${p.badge ? `<span class="absolute top-3 left-3 text-xs font-bold px-3 py-1 rounded-full ${p.badge==='New Arrival'?'bg-ivory text-char':'bg-gold text-char'}">${p.badge}</span>` : ''}
        <button onclick="toggleWish(${p.id})" aria-label="Add to wishlist" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-char/70 hover:text-gold transition"><i class="${wish.has(p.id)?'fa-solid text-gold':'fa-regular'} fa-heart"></i></button>
-       <button onclick="quickView(${p.id})" class="qv absolute bottom-3 left-1/2 bg-black/85 hover:bg-gold hover:text-char text-xs font-semibold px-5 py-2 rounded-full transition">Quick view</button>
+       <button onclick="quickView(${p.id})" class="qv absolute bottom-3 left-1/2 bg-black/85 hover:bg-gold hover:text-char text-xs font-bold px-5 py-2 rounded-full transition">Quick view</button>
      </div>
-     <div class="p-4 flex flex-col flex-1">
-       <p class="text-xs text-ivory/50">${p.cat}</p>
-       <h3 class="font-serif text-xl leading-snug mt-0.5">${p.name}</h3>
+     <div class="p-3 flex flex-col flex-1">
+       <p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">${p.cat}</p>
+       <h3 class="font-serif text-lg font-bold text-white leading-snug mt-0.5">${p.name}</h3>
        <div class="mt-1">${stars(p.rate)}</div>
-       <div class="mt-2 flex items-baseline gap-2"><span class="text-gold font-semibold">${fmt(p.price)}</span>${p.old?`<span class="text-xs line-through text-ivory/40">${fmt(p.old)}</span>`:''}</div>
-       <button onclick="addToCart(${p.id})" class="btn-gold mt-4 rounded-full py-2.5 text-sm font-semibold">Add to cart</button>
+       <div class="mt-2 flex items-baseline gap-2"><span class="text-gold font-bold text-sm">${fmt(p.price)}</span>${p.old?`<span class="text-[10px] line-through text-gray-500">${fmt(p.old)}</span>`:''}</div>
+       <button onclick="addToCart(${p.id})" class="btn-gold mt-3 rounded-full py-2 text-xs font-bold">Add to cart</button>
      </div>
    </article>`).join('');
   observe();
@@ -322,16 +529,16 @@ function renderCart(){
    <div class="flex gap-4">
      <div class="imgbox w-20 h-24 rounded-md overflow-hidden shrink-0"><img src="${U(p.img)}" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'"></div>
      <div class="flex-1 min-w-0">
-       <p class="font-serif text-lg leading-tight">${p.name}</p>
-       <p class="text-gold text-sm mt-1">${fmt(p.price)}</p>
+       <p class="font-serif text-lg font-bold text-white leading-tight">${p.name}</p>
+       <p class="text-gold text-sm font-bold mt-1">${fmt(p.price)}</p>
        <div class="mt-2 inline-flex items-center border border-slate3 rounded-full">
          <button onclick="changeQty(${p.id},-1)" aria-label="Decrease quantity" class="w-8 h-8 hover:text-gold transition">&minus;</button>
-         <span class="w-6 text-center text-sm">${c.qty}</span>
+         <span class="w-6 text-center text-sm font-bold">${c.qty}</span>
          <button onclick="changeQty(${p.id},1)" aria-label="Increase quantity" class="w-8 h-8 hover:text-gold transition">+</button>
        </div>
      </div>
-     <button onclick="removeItem(${p.id})" aria-label="Remove ${p.name}" class="self-start text-ivory/50 hover:text-red-400 transition"><i class="fa-regular fa-trash-can"></i></button>
-   </div>`; }).join('') : '<p class="text-center text-ivory/60 pt-16">Your cart is empty.<br>Add a piece from the shop to get started.</p>';
+     <button onclick="removeItem(${p.id})" aria-label="Remove ${p.name}" class="self-start text-gray-400 hover:text-red-400 transition"><i class="fa-regular fa-trash-can"></i></button>
+   </div>`; }).join('') : '<p class="text-center text-gray-400 pt-16">Your cart is empty.<br>Add a piece from the shop to get started.</p>';
 }
 function toggleCart(open){ $('drawer').classList.toggle('translate-x-full',!open); $('overlay').classList.toggle('opacity-0',!open); $('overlay').classList.toggle('pointer-events-none',!open); document.body.style.overflow = open ? 'hidden' : ''; }
 function checkout(){
@@ -351,23 +558,23 @@ function quickView(id){
   openModal(`<button onclick="closeModal()" aria-label="Close" class="absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-char/70 hover:text-gold transition"><i class="fa-solid fa-xmark"></i></button>
    <div class="grid md:grid-cols-2">
      <div class="imgbox aspect-[3/4] md:aspect-auto md:min-h-[420px]"><img src="${U(p.img)}" alt="${p.name}" class="w-full h-full object-cover" onerror="this.style.display='none'"></div>
-     <div class="p-7 flex flex-col">
-       <p class="text-xs text-ivory/50">${p.g==='men'?'Men':'Women'} · ${p.cat}</p>
-       <h3 class="font-serif text-3xl mt-1">${p.name}</h3>
+     <div class="p-6 flex flex-col">
+       <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">${p.g==='men'?'Men':'Women'} · ${p.cat}</p>
+       <h3 class="font-serif text-2xl font-bold text-white mt-1">${p.name}</h3>
        <div class="mt-2">${stars(p.rate)}</div>
-       <div class="mt-3 flex items-baseline gap-3"><span class="text-gold text-xl font-semibold">${fmt(p.price)}</span>${p.old?`<span class="line-through text-ivory/40">${fmt(p.old)}</span>`:''}</div>
-       <p class="mt-4 text-ivory/70 text-sm leading-relaxed">${p.desc}</p>
-       <div class="mt-auto pt-6 flex gap-3">
-         <button onclick="addToCart(${p.id});closeModal()" class="btn-gold flex-1 rounded-full py-3 text-sm font-semibold">Add to cart</button>
-         <button onclick="toggleWish(${p.id});quickView(${p.id})" aria-label="Wishlist" class="btn-line w-12 rounded-full"><i class="${wish.has(p.id)?'fa-solid text-gold':'fa-regular'} fa-heart"></i></button>
+       <div class="mt-3 flex items-baseline gap-3"><span class="text-gold text-lg font-bold">${fmt(p.price)}</span>${p.old?`<span class="line-through text-gray-500 text-sm">${fmt(p.old)}</span>`:''}</div>
+       <p class="mt-3 text-gray-200 text-sm leading-relaxed">${p.desc}</p>
+       <div class="mt-auto pt-5 flex gap-3">
+         <button onclick="addToCart(${p.id});closeModal()" class="btn-gold flex-1 rounded-full py-2.5 text-xs font-bold">Add to cart</button>
+         <button onclick="toggleWish(${p.id});quickView(${p.id})" aria-label="Wishlist" class="btn-line w-10 rounded-full flex items-center justify-center"><i class="${wish.has(p.id)?'fa-solid text-gold':'fa-regular'} fa-heart text-sm"></i></button>
        </div>
      </div>
    </div>`);
 }
 function showWishlist(){
   const items=products.filter(p=>wish.has(p.id));
-  openModal(`<div class="p-7"><div class="flex justify-between items-center"><h3 class="font-serif text-3xl">Wishlist</h3><button onclick="closeModal()" aria-label="Close" class="w-10 h-10 hover:text-gold transition"><i class="fa-solid fa-xmark text-xl"></i></button></div>
-   ${items.length ? `<div class="mt-5 space-y-3">${items.map(p=>`<div class="flex items-center gap-4 border border-slate3 rounded-md p-3"><div class="imgbox w-14 h-16 rounded overflow-hidden"><img src="${U(p.img)}" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'"></div><div class="flex-1"><p class="font-serif text-lg leading-tight">${p.name}</p><p class="text-gold text-sm">${fmt(p.price)}</p></div><button onclick="addToCart(${p.id});closeModal()" class="btn-gold rounded-full px-4 py-2 text-xs font-semibold">Add to cart</button></div>`).join('')}</div>` : '<p class="mt-6 text-ivory/60">No saved items yet. Tap the heart on any product to save it.</p>'}</div>`);
+  openModal(`<div class="p-6"><div class="flex justify-between items-center"><h3 class="font-serif text-2xl font-bold text-white">Wishlist</h3><button onclick="closeModal()" aria-label="Close" class="w-8 h-8 hover:text-gold transition"><i class="fa-solid fa-xmark text-lg"></i></button></div>
+   ${items.length ? `<div class="mt-4 space-y-2">${items.map(p=>`<div class="flex items-center gap-3 border border-slate3 rounded-md p-2"><div class="imgbox w-12 h-14 rounded overflow-hidden shrink-0"><img src="${U(p.img)}" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'"></div><div class="flex-1 min-w-0"><p class="font-serif text-base font-bold text-white leading-tight truncate">${p.name}</p><p class="text-gold text-xs font-bold">${fmt(p.price)}</p></div><button onclick="addToCart(${p.id});closeModal()" class="btn-gold rounded-full px-3 py-1.5 text-[10px] font-bold whitespace-nowrap">Add</button></div>`).join('')}</div>` : '<p class="mt-6 text-gray-400 text-sm">No saved items yet.</p>'}</div>`);
 }
 
 /* Contact */
@@ -375,6 +582,21 @@ function sendContact(e){
   e.preventDefault();
   const msg=`Hello BLACK BEARS,\nName: ${$('cName').value}\nEmail: ${$('cEmail').value}\n\n${$('cMsg').value}`;
   window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`,'_blank'); e.target.reset();
+}
+
+/* Load More Reviews */
+function toggleReviews() {
+  const hiddenContainer = $('hidden-reviews');
+  const btnText = $('loadMoreBtn');
+  
+  if (hiddenContainer.classList.contains('hidden-reviews')) {
+    hiddenContainer.classList.remove('hidden-reviews');
+    btnText.innerHTML = 'Show Less <i class="fa-solid fa-chevron-up text-[10px] transition-transform duration-300" id="loadMoreIcon"></i>';
+  } else {
+    hiddenContainer.classList.add('hidden-reviews');
+    btnText.innerHTML = 'View More Reviews <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300" id="loadMoreIcon"></i>';
+    $('reviews').scrollIntoView({behavior: 'smooth'});
+  }
 }
 
 /* Fade-in on scroll */
